@@ -2,12 +2,12 @@ using System;
 
 public class Comment
 {
-    public string Author;
-    public string Text;
+    public string _author;
+    public string _text;
 
     public void Display()
     {
-        Console.WriteLine($"Author: {Author}");
-        Console.WriteLine($"Comment: {Text}");
+        Console.WriteLine($"Author: {_author}");
+        Console.WriteLine($"Comment: {_text}");
     }
 }

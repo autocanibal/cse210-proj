@@ -2,22 +2,22 @@ using System;
 
 public class Video
 {
-    public string Title;
-    public string Author;
-    public int Length;
-    public List<Comment> Comments = new List<Comment>();
+    public string _title;
+    public string _author;
+    public int _length;
+    public List<Comment> _comments = new List<Comment>();
 
     public void AddComment(Comment comment)
     {
-        Comments.Add(comment);
+        _comments.Add(comment);
     }
     public void Display()
     {
-        Console.WriteLine($"Title: {Title}");
-        Console.WriteLine($"Author: {Author}");
-        Console.WriteLine($"Length: {Length} seconds");
+        Console.WriteLine($"Title: {_title}");
+        Console.WriteLine($"Author: {_author}");
+        Console.WriteLine($"Length: {_length} seconds");
         Console.WriteLine("Comments:");
-        foreach (Comment comment in Comments)
+        foreach (Comment comment in _comments)
         {
             comment.Display();
             Console.WriteLine();
